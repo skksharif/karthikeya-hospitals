@@ -3,10 +3,20 @@ import { Phone, MapPin, Clock, Shield, Users, Activity } from 'lucide-react';
 
 export default function Hero() {
   return (
-    <div className="relative bg-gradient-to-br from-blue-50 to-white">
-      <div className="absolute inset-0 bg-grid-blue-100/25"></div>
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+    <div className="relative">
+      {/* Background Image */}
+      <div
+        className="absolute inset-0 bg-cover bg-center z-0"
+        style={{ backgroundImage: "url('/bg.jpg')" }}
+      >
+        {/* Dark/Light overlay for readability */}
+        <div className="absolute inset-0 bg-white/80"></div>
+      </div>
+
+      {/* Content Layer */}
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
+          {/* Left Content */}
           <div className="space-y-8">
             <div className="space-y-4">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
@@ -17,7 +27,7 @@ export default function Hero() {
                 Compassionate doctors, advanced facilities, and 24×7 Emergency services under one roof.
               </p>
             </div>
-            
+
             <div className="flex flex-col sm:flex-row gap-4">
               <button className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-lg flex items-center justify-center gap-2">
                 <Phone className="w-5 h-5" />
@@ -29,7 +39,8 @@ export default function Hero() {
               </button>
             </div>
           </div>
-          
+
+          {/* Right Quick Facts */}
           <div className="relative">
             <div className="bg-white rounded-2xl shadow-2xl p-8 space-y-6">
               <h3 className="text-2xl font-bold text-gray-900 mb-6">Quick Facts</h3>
@@ -43,7 +54,7 @@ export default function Hero() {
                     <p className="text-sm text-gray-600">Round-the-clock emergency services</p>
                   </div>
                 </div>
-                
+
                 <div className="flex items-center gap-4 p-4 bg-blue-50 rounded-lg hover:bg-blue-100 transition-colors">
                   <div className="bg-teal-100 p-3 rounded-lg">
                     <Users className="w-6 h-6" style={{ color: '#00697d' }} />
@@ -53,7 +64,7 @@ export default function Hero() {
                     <p className="text-sm text-gray-600">Skilled specialists across departments</p>
                   </div>
                 </div>
-                
+
                 <div className="flex items-center gap-4 p-4 bg-green-50 rounded-lg hover:bg-green-100 transition-colors">
                   <div className="bg-orange-100 p-3 rounded-lg">
                     <Activity className="w-6 h-6 text-orange-500" />
@@ -63,7 +74,7 @@ export default function Hero() {
                     <p className="text-sm text-gray-600">Complete medical services on-site</p>
                   </div>
                 </div>
-                
+
                 <div className="flex items-center gap-4 p-4 bg-purple-50 rounded-lg hover:bg-purple-100 transition-colors">
                   <div className="bg-teal-100 p-3 rounded-lg">
                     <Shield className="w-6 h-6" style={{ color: '#00697d' }} />
@@ -76,6 +87,7 @@ export default function Hero() {
               </div>
             </div>
           </div>
+          {/* End Right */}
         </div>
       </div>
     </div>
