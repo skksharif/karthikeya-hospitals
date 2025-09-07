@@ -25,7 +25,7 @@ export default function Footer() {
                 <Phone className="w-5 h-5" />
                 <span className="font-semibold">Emergency 24×7</span>
               </div>
-              <p className="text-sm opacity-90">+91 XXXX-XXXXXX</p>
+              <p className="text-sm opacity-90">+91 83414-38887</p>
             </div>
           </div>
 

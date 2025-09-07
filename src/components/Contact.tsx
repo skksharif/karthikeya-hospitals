@@ -39,8 +39,8 @@ export default function Contact() {
                   <div>
                     <h4 className="font-semibold text-gray-900 mb-1">Phone Numbers</h4>
                     <p className="text-gray-600">
-                      Main Line: +91 XXXX-XXXXXX<br />
-                      Emergency: +91 XXXX-XXXXXX
+                      Main Line: +91 83414-38887<br />
+                      Emergency: 08869-251678
                     </p>
                   </div>
                 </div>
